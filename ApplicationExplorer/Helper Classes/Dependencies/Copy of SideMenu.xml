@@ -1,0 +1,262 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SideMenu
+</name>
+</assembly>
+<members>
+<member name="P:SideMenu.SideMenuItem.Text">
+	<summary>
+ The text to display on the tab item.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenuItem.ImageList">
+	<summary>
+ Only used for design-time purposes.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenuItem.ImageListObject">
+	<summary>
+ Only used for design-time purposes.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenuItem.ImageIndex">
+	<summary>
+ Index of the image in the ImageList to display.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenuItem.Tag">
+	<summary>
+ Gets or sets the object that contains info about tab.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenuItem.Tooltip">
+	<summary>
+ Text to show when the mouse hovers over the tab.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenuItem.ShowTooltip">
+	<summary>
+ Gets or sets whether the tooltip will be shown.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="T:SideMenu.SideMenuItem">
+	<summary>
+     Tab items for the SideMenu control.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="T:SideMenu.Global">
+	<summary>
+     Generic procs for the SideMenu control
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.Style">
+	<summary>
+ Determines whether the control uses the specified colors or the OS supplied ones.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.ItemLeftSpacing">
+	<summary>
+ Space between the left border of the control and the tab items.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.TopSpacing">
+	<summary>
+ Space between the top and the first tab item.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.ItemHeight">
+	<summary>
+ Size of the tab items.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.ItemSpacing">
+	<summary>
+ Amount of space between the tab items.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.ItemBorderColor">
+	<summary>
+ Border color of the tab items.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.ItemBackColor1">
+	<summary>
+ Color 1 of the tab items gradient background.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.ItemBackColor2">
+	<summary>
+ Color 2 of the tab items gradient background.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.ItemForeColor">
+	<summary>
+ The foreground color used to display text on the tab items.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.SelectedItemBackColor">
+	<summary>
+ Color 1 used to change the gradient background of a selected tab item.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.SelectedItemForeColor">
+	<summary>
+ Color 2 used to change the gradient background of a selected tab item.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.ImageList">
+	<summary>
+ The imagelist from which this control will get all the images to display in the tab items.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.ImageSize">
+	<summary>
+ The size of images displayed in the tab items.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.AllowReselection">
+	<summary>
+ Allow events to be raised even if the user clicks on an already selected tab item.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.Items">
+	<summary>
+ The collection of tab items.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.RepeatScrollSpeed">
+	<summary>
+ The speed at which the control will scroll when the user holds down the scroll buttons.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.SelectedItem">
+	<summary>
+ Gets or sets the currently selected tab item.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="P:SideMenu.SideMenu.SelectedItemIndex">
+	<summary>
+ Gets or sets the currently selected tab item.
+ </summary>
+	<value></value>
+	<remarks>
+	</remarks>
+</member><member name="M:SideMenu.SideMenu.HitTest(System.Int32,System.Int32)">
+	<summary>
+ Determine what tab item exists at the specified coordinates.
+ </summary>
+	<param name="x"></param>
+	<param name="y"></param>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="M:SideMenu.SideMenu.HitTest(System.Int32,System.Int32,System.Drawing.Rectangle@)">
+	<summary>
+ Determine what tab item exists at the specified coordinates.
+ </summary>
+	<param name="x"></param>
+	<param name="y"></param>
+	<param name="sideMenuRect">Returns back to the caller the exact coordinates of the tab item.</param>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="M:SideMenu.SideMenu.BeginUpdate">
+	<summary>
+ Prevents the control from drawing the tabs until EndUpdate is called.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:SideMenu.SideMenu.EndUpdate">
+	<summary>
+ Resumes drawing of the control after BeginUpdate is called.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:SideMenu.SideMenu.IsUpdating">
+	<summary>
+ Determine whether BeginUpdate has been called.
+ </summary>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="M:SideMenu.SideMenu.FindTag(System.Object)">
+	<summary>
+ Find the tab item with the specified tag.
+ </summary>
+	<param name="o"></param>
+	<returns></returns>
+	<remarks>
+	</remarks>
+</member><member name="M:SideMenu.SideMenu.ScrollUp">
+	<summary>
+ Scroll the tab items up.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="M:SideMenu.SideMenu.ScrollDown">
+	<summary>
+ Scroll the tab items down.
+ </summary>
+	<remarks>
+	</remarks>
+</member><member name="T:SideMenu.SideMenu">
+	<summary>
+     Side tab control (outlook bar) with an Ol2k3/MS CRM-esque look.
+ </summary>
+	<remarks>
+	</remarks>
+</member>
+</members>
+</doc>

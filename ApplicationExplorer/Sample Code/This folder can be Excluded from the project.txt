@@ -1,0 +1,5 @@
+This entire folder can be safely excluded from the project.
+Simply right-click on the folder and select "Exclude from Project."
+
+Then, goto My Project -> Compile -> Advance Compile Options and 
+ensure that SAMPLEMODE="None"

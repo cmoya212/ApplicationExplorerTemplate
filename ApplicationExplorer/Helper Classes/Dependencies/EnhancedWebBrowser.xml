@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EnhancedWebBrowser
+</name>
+</assembly>
+<members>
+<member name="T:EnhancedWebBrowser.EnhancedWebBrowser">
+	<summary>
+ Inherited from .NET 2.0 Webbrowser to provide missing functionality.
+ </summary>
+	<remarks>Even the new .NET 2.0 Webbrowser doesn't implement a full feature set... this class begins to solve that.</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ApplicationExplorer", "ApplicationExplorer\ApplicationExplorer.vbproj", "{F241E2DB-6EAC-495D-82C1-E28C2606C9E3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs01.codeplex.com/
+		SccProjectUniqueName0 = ApplicationExplorer\\ApplicationExplorer.vbproj
+		SccProjectName0 = $/appexplore/ApplicationExplorer/ApplicationExplorer
+		SccAuxPath0 = https://tfs01.codeplex.com
+		SccLocalPath0 = ApplicationExplorer
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F241E2DB-6EAC-495D-82C1-E28C2606C9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F241E2DB-6EAC-495D-82C1-E28C2606C9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F241E2DB-6EAC-495D-82C1-E28C2606C9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F241E2DB-6EAC-495D-82C1-E28C2606C9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

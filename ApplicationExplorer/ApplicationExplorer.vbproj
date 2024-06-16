@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F241E2DB-6EAC-495D-82C1-E28C2606C9E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ApplicationExplorer.My.MyApplication</StartupObject>
+    <RootNamespace>ApplicationExplorer</RootNamespace>
+    <AssemblyName>MyApplication</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <OptionStrict>On</OptionStrict>
+    <ApplicationIcon>ApplicationIcon.ico</ApplicationIcon>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MyApplication.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <DefineConstants>SAMPLEMODE="MultiView"</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MyApplication.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <DefineConstants>SAMPLEMODE="MultiView"</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnhancedWebBrowser, Version=1.0.2554.12547, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="MDIWindowManager, Version=2.1.2554.14192, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SideMenu, Version=1.0.2532.30917, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.Designer.vb">
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Broadcasting.vb" />
+    <Compile Include="Global.vb" />
+    <Compile Include="Helper Classes\StatusStack.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper Classes\Notifier.vb" />
+    <Compile Include="Optional Interfaces\IBroadcastAware.vb" />
+    <Compile Include="Optional Interfaces\ICustomUIToolsCapable.vb" />
+    <Compile Include="ApplicationExplorerForm.InternalCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optional Interfaces\IBrowseCapable.vb" />
+    <Compile Include="Optional Interfaces\ICustomEditFindCapable.vb" />
+    <Compile Include="Optional Interfaces\IRefreshCapable.vb" />
+    <Compile Include="OptionsForm.Designer.vb">
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper Classes\MenuStripEx.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sample Code\ApplicationExplorerForm.ExampleCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample Code\SampleForm_PictureBrowser.Designer.vb">
+      <DependentUpon>SampleForm_PictureBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sample Code\SampleForm_PictureBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample Code\SampleForm_PictureViewer.Designer.vb">
+      <DependentUpon>SampleForm_PictureViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sample Code\SampleForm_PictureViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample Code\SampleForm_TextFileBrowser.Designer.vb">
+      <DependentUpon>SampleForm_TextFileBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sample Code\SampleForm_TextFileBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample Code\SampleForm_TextViewer.Designer.vb">
+      <DependentUpon>SampleForm_TextViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sample Code\SampleForm_TextViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="WebBrowserForm.Designer.vb">
+      <DependentUpon>WebBrowserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.vb">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper Classes\BasicEditHelper.vb" />
+    <Compile Include="Helper Classes\ClipboardCopyPrompt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationExplorerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationExplorerForm.Designer.vb">
+      <DependentUpon>ApplicationExplorerForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optional Interfaces\IApplicationExplorerAware.vb" />
+    <Compile Include="Optional Interfaces\ICustomEditOperationsCapable.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Helper Classes\DrawingHelper.vb" />
+    <Compile Include="Helper Classes\FindForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Widgets.Designer.vb">
+      <DependentUpon>Widgets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Widgets.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper Classes\ClipboardCopyPrompt.resx">
+      <DependentUpon>ClipboardCopyPrompt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplicationExplorerForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ApplicationExplorerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper Classes\FindForm.resx">
+      <DependentUpon>FindForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RefreshDocViewHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_Cancel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RefreshDocView.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CutHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasteHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_UndoHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ApplicationIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavBack.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavForward.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CloseWindowButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTileButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PopoutWindowButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileWindowButton.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FillDown.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FillRight.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoLtr.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoRtl.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_open.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTMLPage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertPhotos.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample Code\SampleForm_PictureBrowser.resx">
+      <DependentUpon>SampleForm_PictureBrowser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample Code\SampleForm_PictureViewer.resx">
+      <DependentUpon>SampleForm_PictureViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample Code\SampleForm_TextFileBrowser.resx">
+      <DependentUpon>SampleForm_TextFileBrowser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample Code\SampleForm_TextViewer.resx">
+      <DependentUpon>SampleForm_TextViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowserForm.resx">
+      <DependentUpon>WebBrowserForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Widgets.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Widgets.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ITEM_ADD.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ITEM_DELETE.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ITEM_EDIT.bmp" />
+    <None Include="Sample Code\This folder can be Excluded from the project.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Helper Classes\Dependencies\EnhancedWebBrowser.dll" />
+    <Content Include="Helper Classes\Dependencies\EnhancedWebBrowser.xml" />
+    <Content Include="Helper Classes\Dependencies\Interop.SHDocVw.dll" />
+    <Content Include="Helper Classes\Dependencies\MDIWindowManager.dll" />
+    <Content Include="Helper Classes\Dependencies\MDIWindowManager.xml" />
+    <Content Include="Helper Classes\Dependencies\SideMenu.dll" />
+    <Content Include="Helper Classes\Dependencies\SideMenu.xml" />
+    <None Include="Resources\ITEM_DELETE2.bmp" />
+    <None Include="Resources\ITEM_ADD2.bmp" />
+    <None Include="Resources\ITEM_EDIT2.bmp" />
+    <None Include="Resources\Login.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
